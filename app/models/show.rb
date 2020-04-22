@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   end 
   
   def Show::most_popular_show
-    Show.rating.where("rating = ?", Show.highest_rating)
+    Show.name.where("rating = ?", Show.highest_rating)
     binding.pry
   end 
   
